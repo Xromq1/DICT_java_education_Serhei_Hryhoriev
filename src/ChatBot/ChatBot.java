@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ChatBot {
     public static void main(String[] args) {
-        System.out.println("Hello! My name is ChatBot Made by Serheu Hryhoriev.");
+        System.out.println("Hello! My name is ChatBot Made by Serhei Hryhoriev.");
         System.out.println("I was created in 2023.");
         System.out.println("Please, remind me your name.");
 
@@ -27,5 +27,24 @@ public class ChatBot {
         for (int i = 1; i <= userInp; i++) {
             System.out.println(i + "!");
         }
+
+        System.out.println("Let's test your programming knowledge.");
+        System.out.println("What does the 'HTML' stand for?");
+        System.out.println("1. Hyper Text Markup Language");
+        System.out.println("2. Hyper Transfer Markup Language");
+        System.out.println("3. Hyperlink and Text Markup Language");
+        System.out.println("4. Home Tool Markup Language");
+
+        while (true) {
+            int userAnswer = scanner.nextInt();
+            if (userAnswer == 1) {
+                System.out.println("Congratulations! That's correct.");
+                break;
+            } else {
+                System.out.println("Sorry, that's not correct. Please try again.");
+            }
+        }
+
+        System.out.println("Goodbye, have a nice day!");
     }
 }
